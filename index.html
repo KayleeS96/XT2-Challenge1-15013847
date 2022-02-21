@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SpaceX Interplanetary Transport System Dashboard</title>
+        <link type="text/css" href="styles/main.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body onload="startClock()">
+        <header>
+            <p class="dash">SPACE<span>X</span> ITSI DASHBOARD</p>
+        </header>
+
+        <main class="container">
+
+            <section>
+                <div id="clockWork"></div>
+            
+                <canvas id="doughnutChart"></canvas> 
+            
+                <canvas id="pieChart"></canvas>
+
+                <canvas id="barChart"></canvas>
+            </section>
+        
+        </main>
+
+        <footer>
+            <p class="control"><a href="#">Contact ground control</a></p>
+        </footer>    
+    </body>
+</html>

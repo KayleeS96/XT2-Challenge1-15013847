@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Orbitron;
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #979797;
+    font-family: Orbitron;
+}
+
+/* styling of the main contents */
+
+header {
+    background-color: #4b4b4b;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dash {
+    color: white;
+    font-family: Orbitron;
+}
+
+span {
+    color: black;
+    font-family: Orbitron;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#clockWork {
+    color: white;
+    background-color: #4b4b4b;
+    opacity: 50%;
+    width: 100%;
+    margin-bottom: 10px;
+    order: 1;
+    text-align: center;
+}
+
+canvas {
+    background-color: #4b4b4b;
+    opacity: 50%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+#doughnutChart {
+    order: 2;
+}
+
+#pieChart {
+    order: 3;
+}
+
+#barChart {
+    order: 4;
+    padding-left: 10px;
+}
+
+
+
+/* styling of the footer */
+footer {
+    background-color: #4b4b4b;
+    width: 100%;
+    margin-top: 40px;
+    padding: 2px;
+}
+
+.control {
+    color: white;
+    font-family: Orbitron;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
+
+@media  screen and (max-width: 600px) {
+    
+    .dash {
+        font-size: 1.5em;
+        padding: 2px;
+    }
+
+    span {
+        font-size: 1.25em;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #clockWork {
+        font-size: 2.5em;
+        width: 400px;
+        height: 210px;
+        line-height: 210px;
+    }
+
+    canvas {
+        height: 210px;
+    }
+
+    .control {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .dash {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #clockWork {
+        font-size: 3.5em;
+        width: 400px;
+        height: 210px;
+        line-height: 210px;
+    }
+
+    canvas {
+        height: 210px;
+    }
+
+
+    .control {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .dash {
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    span {
+        font-size: 1.5em;
+    }
+
+    section {
+        flex-direction: row;
+        flex: 200px;
+    }
+
+    #clockWork {
+        flex: 48%;
+        font-size: 4em;
+        width: 200px;
+        height: 375px;
+        line-height: 375px;
+        margin-left: 0.5rem;
+    }
+
+    canvas {
+        height:  375px;
+    }
+
+    #doughnutChart {
+        flex: 50%;
+        margin-left: 0.5rem;
+    }
+
+    #pieChart {
+        flex: 1;
+        margin-left: 0.5rem;
+    }
+
+    #barChart {
+        flex: 1;
+        margin-left: 0.5rem;
+    }
+
+    .control {
+        font-size: 1.75em;
+    }
+    
+}
